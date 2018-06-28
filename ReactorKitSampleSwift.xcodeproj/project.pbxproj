@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B24B85FE522E105D4075B927 /* Pods_ReactorKitSampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC82A65EB530F59D35666D6 /* Pods_ReactorKitSampleSwift.framework */; };
 		DE3BEE9E20E4FE4F002A25FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEE9D20E4FE4F002A25FC /* AppDelegate.swift */; };
 		DE3BEEA020E4FE4F002A25FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEE9F20E4FE4F002A25FC /* ViewController.swift */; };
 		DE3BEEA320E4FE4F002A25FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3BEEA120E4FE4F002A25FC /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EC82A65EB530F59D35666D6 /* Pods_ReactorKitSampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactorKitSampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D9CFE7B2B1F1DF14FD4601E /* Pods-ReactorKitSampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactorKitSampleSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactorKitSampleSwift/Pods-ReactorKitSampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		5E7A8C455AA58F3E2B807DB3 /* Pods-ReactorKitSampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactorKitSampleSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactorKitSampleSwift/Pods-ReactorKitSampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		DE3BEE9A20E4FE4F002A25FC /* ReactorKitSampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactorKitSampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3BEE9D20E4FE4F002A25FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE3BEE9F20E4FE4F002A25FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24B85FE522E105D4075B927 /* Pods_ReactorKitSampleSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CCC9859421685D2851E04396 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D9CFE7B2B1F1DF14FD4601E /* Pods-ReactorKitSampleSwift.debug.xcconfig */,
+				5E7A8C455AA58F3E2B807DB3 /* Pods-ReactorKitSampleSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DE3BEE9120E4FE4F002A25FC = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				DE3BEEB120E4FE55002A25FC /* ReactorKitSampleSwiftTests */,
 				DE3BEEBC20E4FE55002A25FC /* ReactorKitSampleSwiftUITests */,
 				DE3BEE9B20E4FE4F002A25FC /* Products */,
+				CCC9859421685D2851E04396 /* Pods */,
+				DECAC8056A760722D57298D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = ReactorKitSampleSwiftUITests;
 			sourceTree = "<group>";
 		};
+		DECAC8056A760722D57298D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EC82A65EB530F59D35666D6 /* Pods_ReactorKitSampleSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE3BEEC220E4FE55002A25FC /* Build configuration list for PBXNativeTarget "ReactorKitSampleSwift" */;
 			buildPhases = (
+				D6B3A01C67AA1883CBD03BC8 /* [CP] Check Pods Manifest.lock */,
 				DE3BEE9620E4FE4F002A25FC /* Sources */,
 				DE3BEE9720E4FE4F002A25FC /* Frameworks */,
 				DE3BEE9820E4FE4F002A25FC /* Resources */,
+				1CEB40E57D70845876CFF5A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CEB40E57D70845876CFF5A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReactorKitSampleSwift/Pods-ReactorKitSampleSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactorKitSampleSwift/Pods-ReactorKitSampleSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6B3A01C67AA1883CBD03BC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactorKitSampleSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE3BEE9620E4FE4F002A25FC /* Sources */ = {
@@ -428,15 +495,14 @@
 		};
 		DE3BEEC320E4FE55002A25FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D9CFE7B2B1F1DF14FD4601E /* Pods-ReactorKitSampleSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = ReactorKitSampleSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.ReactorKitSampleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -446,15 +512,14 @@
 		};
 		DE3BEEC420E4FE55002A25FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E7A8C455AA58F3E2B807DB3 /* Pods-ReactorKitSampleSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = ReactorKitSampleSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.ReactorKitSampleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -470,11 +535,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = ReactorKitSampleSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.ReactorKitSampleSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -491,11 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = ReactorKitSampleSwiftTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.ReactorKitSampleSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -511,11 +568,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = ReactorKitSampleSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.ReactorKitSampleSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -531,11 +584,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = ReactorKitSampleSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.ReactorKitSampleSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
